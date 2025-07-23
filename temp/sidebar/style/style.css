@@ -1,3 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "poppins", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* *** */
+
 .navigation {
   background-color: white;
   display: flex;
@@ -21,48 +48,33 @@
   color: grey;
 }
 
-.navigation :where(.nav-menu) a {
+.navigation :where(.nav-menu) {
+  display: none;
+  padding: 1rem 2rem;
+  color: grey;
+}
+
+.navigation :where(.nav-sidebar) {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  height: 100vh;
+  background-color: white;
+}
+
+.navigation :where(.nav-sidebar) a {
   display: flex;
   padding: 1rem 2rem;
   color: grey;
 }
 
-.navigation :where(.nav-menu) {
-  display: none;
-}
-
-.navigation :where(.sidebar-links) {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  background-color: white;
-  z-index: 1000;
-}
-
-.navigation :where(.sidebar-links) a {
-  display: block;
-  padding: 1rem 2rem;
-  align-items: center;
-  color: grey;
-}
-
-@media screen and (max-width: 1440px) {
-}
-@media screen and (max-width: 1024px) {
-}
 @media screen and (max-width: 768px) {
-  .navigation :where(.nav-links) {
-    display: none;
-  }
   .navigation :where(.nav-menu) {
     display: flex;
   }
-}
-@media screen and (max-width: 425px) {
-}
-@media screen and (max-width: 375px) {
-}
-@media screen and (max-width: 320px) {
+  .navigation :where(.nav-links) {
+    display: none;
+  }
 }
