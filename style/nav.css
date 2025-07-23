@@ -1,0 +1,27 @@
+.navigation {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation :where(.nav-brand) a {
+  display: flex;
+  padding: 1rem 2rem;
+  color: grey;
+}
+
+.navigation :where(.nav-links) {
+  display: flex;
+}
+
+.navigation :where(.nav-links) a {
+  display: flex;
+  padding: 1rem 2rem;
+  color: grey;
+}
+
+.navigation :where(.nav-menu) a {
+  display: flex;
+  padding: 1rem 2rem;
+  color: grey;
+}
