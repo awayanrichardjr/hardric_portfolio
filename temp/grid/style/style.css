@@ -51,6 +51,22 @@ a {
   font-size: 20px;
 }
 
+.grid :where(.div1) {
+  grid-area: box-1;
+}
+.grid :where(.div2) {
+  grid-area: box-2;
+}
+.grid :where(.div3) {
+  grid-area: box-3;
+}
+.grid :where(.div4) {
+  grid-area: box-4;
+}
+.grid :where(.div5) {
+  grid-area: box-5;
+}
+
 @media screen and (max-width: 890px) {
   .grid {
     grid-template-columns: repeat(3, 200px);
