@@ -31,6 +31,7 @@
 
 .contact :where(.details) {
   height: 100%;
+  width: 100%;
 }
 
 .contact :where(.details) li {
@@ -49,37 +50,38 @@
   gap: 2rem;
   margin-top: 2.5rem;
 }
-
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1440px) {
+}
+@media screen and (max-width: 1024px) {
   .contact :where(.container) {
     flex-direction: column-reverse;
   }
-
+}
+@media screen and (max-width: 768px) {
   .contact :where(.details) .social-links {
-    justify-content: start;
+    justify-content: center;
+  }
+  .contact :where(.heading1) {
+    font-size: 50px;
   }
 }
-
 @media screen and (max-width: 600px) {
   .contact :where(.container) {
     width: 100%;
   }
   .contact :where(iframe) {
-    width: inherit;
-    border-radius: unset;
+    width: 100%;
   }
-  .contact :where(.details) li {
+  .contact :where(.container) li {
     padding-inline: 1rem;
   }
-
+}
+@media screen and (max-width: 425px) {
   .contact :where(.heading1) {
-    font-size: 50px;
+    font-size: 30px;
   }
-  .contact :where(.details) {
-    width: 100%;
-  }
-  .contact :where(.details) .social-links {
-    justify-content: center;
-    width: 100%;
-  }
+}
+@media screen and (max-width: 375px) {
+}
+@media screen and (max-width: 320px) {
 }

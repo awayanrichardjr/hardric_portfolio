@@ -26,7 +26,7 @@
 
   box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur();
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
 }
 
 .navigation :where(.nav-sidebar) a {
@@ -97,21 +97,28 @@
 .navigation :where(.nav-links) a:hover {
   color: black;
 }
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1440px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
   .navigation :where(.nav-links) {
     display: none;
   }
+
   .navigation :where(.nav-menu) {
     display: flex;
   }
 }
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 426px) {
   .navigation :where(.nav-sidebar) {
     width: 100%;
   }
   .navigation :where(.nav-sidebar) a {
     justify-content: center;
   }
+}
+@media screen and (max-width: 375px) {
+}
+@media screen and (max-width: 320px) {
 }
