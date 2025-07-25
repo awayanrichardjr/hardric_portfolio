@@ -23,19 +23,22 @@
   padding: 1rem 2rem;
   border-radius: 0.5rem;
 
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
-
   color: grey;
+  margin-top: 1rem;
+  transition: 0.5s;
 }
 
 .header :where(.link:hover) {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
   color: black;
+  font-size: 16.3px;
 }
 .header :where(.link:active) {
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
     inset -10px -10px 10px white;
   color: grey;
-  font-size: 15px;
+  transition: unset;
+  font-size: 15.7px;
 }
 
 @media screen and (max-width: 1440px) {
