@@ -3,13 +3,10 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  padding-top: 10rem;
-
-  /* overflow: auto; */
 }
 
 .expertise :where(.heading1) {
@@ -41,6 +38,7 @@
 .expertise :where(.skills-list) li:hover {
   transform: translate(0, -5px);
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 .expertise :where(.skill) {
@@ -64,6 +62,11 @@
   }
 }
 @media screen and (max-width: 660px) {
+  .expertise {
+    padding-top: 10rem;
+    justify-content: start;
+  }
+
   .expertise :where(.skills-list) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);

@@ -50,6 +50,14 @@
   gap: 2rem;
   margin-top: 2.5rem;
 }
+
+.contact :where(.details) .social-links a {
+  transition: 0.3s ease-in-out;
+}
+.contact :where(.details) .social-links a:hover {
+  transform: translate(0, -2px);
+  box-shadow: var(--boxsh);
+}
 @media screen and (max-width: 1440px) {
 }
 @media screen and (max-width: 1024px) {
