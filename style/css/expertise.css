@@ -9,7 +9,7 @@
   padding: 1rem;
   padding-top: 10rem;
 
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .expertise :where(.heading1) {
@@ -70,6 +70,10 @@
     grid-template-areas:
       "box-1" "box-2"
       "box-3" "box-4";
+  }
+
+  .expertise {
+    height: fit-content;
   }
 }
 @media screen and (max-width: 425px) {
