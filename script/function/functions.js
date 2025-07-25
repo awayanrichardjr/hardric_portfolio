@@ -1,7 +1,6 @@
-// sidebar
 function nav_menu() {
-  document.getElementById("sidebar").style.display = "block";
+  document.getElementById("nav-sidebar").style.display = "block";
 }
-function sidebar() {
-  document.getElementById("sidebar").style.display = "none";
+function nav_sidebar() {
+  document.getElementById("nav-sidebar").style.display = "none";
 }
