@@ -7,7 +7,6 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   background-color: whitesmoke;
 }
 
@@ -23,5 +22,3 @@ li {
 a {
   text-decoration: none;
 }
-
-/* *** */

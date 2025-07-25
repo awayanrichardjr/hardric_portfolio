@@ -79,6 +79,7 @@
   }
   .contact :where(iframe) {
     width: 100%;
+    border-radius: unset;
   }
   .contact :where(.container) li {
     padding-inline: 1rem;
