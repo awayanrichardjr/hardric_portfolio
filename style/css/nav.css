@@ -36,7 +36,7 @@
   color: grey;
 }
 .navigation :where(.nav-sidebar) a:hover {
-  color: black;
+  color: var(--red);
 }
 .navigation :where(.nav-sidebar) button {
   border: none;
@@ -65,7 +65,7 @@
   color: grey;
 }
 .navigation :where(.nav-menu) a:hover {
-  color: black;
+  color: var(--red);
 }
 .navigation :where(.nav-menu) button {
   border: none;
@@ -77,7 +77,7 @@
   cursor: pointer;
 }
 .navigation :where(.nav-menu) button:hover {
-  color: black;
+  color: var(--red);
 }
 
 .navigation :where(.nav-brand) a {
@@ -86,7 +86,7 @@
   color: grey;
 }
 .navigation :where(.nav-brand) a:hover {
-  color: black;
+  color: var(--red);
 }
 
 .navigation :where(.nav-links) a {
@@ -96,7 +96,7 @@
 }
 
 .navigation :where(.nav-links) a:hover {
-  color: black;
+  color: var(--red);
 }
 @media screen and (max-width: 1440px) {
 }

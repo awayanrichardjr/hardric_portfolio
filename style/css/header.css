@@ -2,20 +2,61 @@
   height: 100vh;
 
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+}
+.header :where(.container) {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.header :where(img) {
+  border-radius: 100%;
 
-  text-align: center;
+  aspect-ratio: 1/1;
+  max-width: 400px;
+  object-fit: contain;
+
+  padding: 0.5rem;
+  background-color: white;
+  box-shadow: var(--boxsh);
+
+  animation: meee 4s ease-in-out infinite;
 }
 
-.header :where(.heading2) {
+@keyframes meee {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.header :where(.container) .greeting {
   font-size: 70px;
+  white-space: wrap;
+  color: grey;
+  font-style: italic;
+}
+
+.header :where(.container) .myname {
+  font-size: 70px;
+  max-width: 500px;
+  color: var(--red);
+  white-space: wrap;
+  font-style: italic;
+}
+.header :where(.container) .prof {
+  color: grey;
 }
 
 .header :where(.link) {
-  /* border: 1px solid lightgrey; */
-
   display: flex;
   gap: 0.3rem;
   align-items: center;
@@ -23,15 +64,17 @@
   padding: 1rem 2rem;
   border-radius: 0.5rem;
 
-  color: grey;
+  color: lightgrey;
   margin-top: 1rem;
   transition: 0.5s;
 }
 
 .header :where(.link:hover) {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
-  color: black;
+  color: var(--red);
   font-size: 16.3px;
+
+  border-color: transparent;
 }
 .header :where(.link:active) {
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
@@ -44,18 +87,56 @@
 @media screen and (max-width: 1440px) {
 }
 @media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: column-reverse;
+    padding-top: 5rem;
+  }
+  .header :where(img) {
+    width: 250px;
+  }
+
+  .header :where(.container) {
+    align-items: center;
+  }
+  .header :where(.container) .greeting {
+    font-size: 30px;
+    width: 100%;
+  }
+  .header :where(.container) .myname {
+    font-size: 40px;
+  }
+  .header :where(.container) .prof {
+    width: 100%;
+    text-align: end;
+  }
 }
 @media screen and (max-width: 768px) {
-  .header :where(.heading1) {
-    font-size: unset;
+}
+@media screen and (max-width: 426px) {
+  .header :where(img) {
+    width: 200px;
   }
-  .header :where(.heading2) {
+  .header :where(.container) .greeting {
     font-size: 30px;
+    width: unset;
+  }
+  .header :where(.container) .myname {
+    font-size: 30px;
+    width: unset;
+  }
+  .header :where(.container) .prof {
+    width: unset;
   }
 }
-@media screen and (max-width: 425px) {
-}
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
+  .header :where(.container) .greeting {
+    font-size: 20px;
+    width: unset;
+  }
+  .header :where(.container) .myname {
+    font-size: 20px;
+    width: unset;
+  }
 }
 @media screen and (max-width: 320px) {
 }

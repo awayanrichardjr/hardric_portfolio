@@ -62,12 +62,16 @@
 
     <!-- header -->
     <header class="header" id="home">
-      <h1 class="heading1">Hi! I am Richard D. Awayan Jr.</h1>
-      <h1 class="heading2">Frontend Developer</h1>
-      <a href="#" class="link">
-        <span class="material-symbols-outlined">download</span>
-        <p>Download CV</p>
-      </a>
+      <div class="container">
+        <h1 class="greeting">Hi! I am</h1>
+        <h1 class="myname">Richard D. Awayan Jr.</h1>
+        <p class="prof">Frontend Developer</p>
+        <a href="#" class="link">
+          <span class="material-symbols-outlined">download</span>
+          <p>Download CV</p>
+        </a>
+      </div>
+      <img src="img/me.png" alt="me" />
     </header>
 
     <section class="expertise" id="expertise">
@@ -143,17 +147,26 @@
             <p>0906-587-6602</p>
           </li>
           <li class="social-links">
-            <a href="https://github.com/awayanrichardjr">
+            <a
+              href="#"
+              onclick="window.open(github, 'PopupWindow'); return false;"
+            >
               <img src="img/svg/github.svg" alt="github" style="width: 21px" />
             </a>
-            <a href="https://www.facebook.com/awayanrichardjr">
+            <a
+              href="#"
+              onclick="window.open(facebook, 'PopupWindow'); return false;"
+            >
               <img
                 src="img/svg/facebook.svg"
                 alt="facebook"
                 style="width: 21px"
               />
             </a>
-            <a href="https://www.instagram.com/awayanrichardjr/">
+            <a
+              href=""
+              onclick="window.open(instagram, 'PopupWindow'); return false;"
+            >
               <img
                 src="img/svg/instagram.svg"
                 alt="instagram"
@@ -161,7 +174,8 @@
               />
             </a>
             <a
-              href="https://www.linkedin.com/in/richard-dumael-awayan-jr-b256502b8/"
+              href="#"
+              onclick="window.open(linkedin, 'PopupWindow'); return false;"
             >
               <img
                 src="img/svg/linkedin.svg"
