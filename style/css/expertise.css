@@ -13,6 +13,7 @@
   font-size: 70px;
   text-align: center;
 }
+
 .expertise :where(.skills-list) {
   display: grid;
   grid-template-columns: repeat(2, 500px);
@@ -22,6 +23,7 @@
     "box-3 box-4";
   grid-gap: 1rem;
 }
+
 .expertise :where(.skills-list) li {
   padding: 1rem;
   border-radius: 0.5rem;
@@ -33,6 +35,19 @@
   gap: 1rem;
   transition: 0.1s ease-in-out;
   text-align: justify;
+}
+
+.expertise :where(.skills-list) li:nth-child(1) {
+  grid-area: box-1;
+}
+.expertise :where(.skills-list) li:nth-child(2) {
+  grid-area: box-2;
+}
+.expertise :where(.skills-list) li:nth-child(3) {
+  grid-area: box-3;
+}
+.expertise :where(.skills-list) li:nth-child(4) {
+  grid-area: box-4;
 }
 
 .expertise :where(.skills-list) li:hover {

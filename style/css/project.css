@@ -32,6 +32,13 @@
   gap: 1rem;
 }
 
+.project :where(.project-list) li:nth-child(1) {
+  grid-area: box-1;
+}
+.project :where(.project-list) li:nth-child(2) {
+  grid-area: box-2;
+}
+
 .project :where(.add) {
   display: flex;
   justify-content: center;
