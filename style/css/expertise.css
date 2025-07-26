@@ -47,8 +47,9 @@
 .expertise :where(.description) {
   color: grey;
 }
-.expertise :where(.skills-list) li:hover p {
-}
+/* .expertise :where(.skills-list) li:hover p {
+} */
+
 @media screen and (max-width: 1440px) {
 }
 @media screen and (max-width: 1024px) {

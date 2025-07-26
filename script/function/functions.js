@@ -1,3 +1,4 @@
+// navigation sidebar
 function nav_menu() {
   document.getElementById("nav-sidebar").style.display = "block";
 }
