@@ -1,6 +1,4 @@
-# images here
-
-## REFERENCES
+# REFERENCES
 
     UI-and-UX
     https://www.bing.com/images/search?view=detailV2&ccid=g3OPoiY2&id=04C8B8AAA8D252CF4A3B9A8B01770EC67FEC3D32&thid=OIP.g3OPoiY2WYrwzOlU7AhhcAHaE8&mediaurl=https%3A%2F%2Fuaewebsitedevelopment.com%2Fwp-content%2Fuploads%2F2022%2F08%2FUI-and-UX.jpg&exph=1200&expw=1800&q=ux+ui+design+websites&form=IRPRST&ck=5A0AFCCA3A45D7F90C6C31E8FFFFDAE4&selectedindex=0&itb=0&cw=1375&ch=664&ajaxhist=0&ajaxserp=0&vt=0&sim=11&pivotparams=insightsToken%3Dccid_g3OPoiY2*cp_D0558B62EB66F0D4EF88DFFC2C9442DF*mid_09370DD3FDE861B586BB9A8B01770EC67FEC3D32*simid_608044624455678676*thid_OIP.g3OPoiY2WYrwzOlU7AhhcAHaE8&iss=VSI
