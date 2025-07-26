@@ -14,6 +14,7 @@
   font-size: 70px;
   text-align: center;
   color: var(--red);
+  font-style: italic;
 }
 
 .expertise :where(.skills-list) {
@@ -37,7 +38,7 @@
   /* gap: 1rem;
    */
   transition: 0.1s ease-in-out;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .expertise :where(.skills-list) li:nth-child(1) {
@@ -97,17 +98,17 @@
 .expertise :where(.skill) {
   color: black;
 }
-.expertise :where(.skills-list) li:hover .skill {
-  color: var(--red);
-}
 .expertise :where(.description) {
   color: grey;
+}
+
+/* hover */
+.expertise :where(.skills-list) li:hover .skill {
+  color: var(--red);
 }
 .expertise :where(.skills-list) li:hover .description {
   color: black;
 }
-/* .expertise :where(.skills-list) li:hover p {
-} */
 
 @media screen and (max-width: 1440px) {
 }

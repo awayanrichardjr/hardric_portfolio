@@ -12,6 +12,8 @@
 
 .project :where(.heading1) {
   font-size: 70px;
+  font-style: italic;
+  color: var(--red);
 }
 .project :where(.project-list) {
   display: grid;
