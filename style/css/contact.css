@@ -45,6 +45,10 @@ a {
   gap: 0.3rem;
   padding-block: 0.2rem;
 }
+.contact :where(.details) li:hover,
+a:hover {
+  color: var(--red);
+}
 
 .contact :where(.details) .social-links {
   display: flex;
