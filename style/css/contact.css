@@ -54,7 +54,6 @@ a:hover {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 2rem;
   margin-top: 2.5rem;
 }
 
@@ -67,11 +66,33 @@ a:hover {
 
 .contact :where(.details) .social-links a {
   transition: 0.3s ease-in-out;
+  padding: 1rem;
+  border-radius: 100%;
 }
 .contact :where(.details) .social-links a:hover {
   transform: translate(0, -2px);
   box-shadow: var(--bs-below);
 }
+
+.contact :where(.details) .social-links > a span {
+  display: none;
+}
+
+.contact :where(.details) .social-links > a:hover span {
+  display: block;
+  position: absolute;
+  margin-bottom: 4rem;
+  margin-left: 1rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  z-index: 999;
+}
+
 @media screen and (max-width: 1440px) {
 }
 @media screen and (max-width: 1024px) {
