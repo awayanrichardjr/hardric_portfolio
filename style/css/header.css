@@ -113,6 +113,10 @@
   color: var(--red);
 }
 
+.header :where(.scroll-down) span:nth-child(3) {
+  display: none;
+}
+
 @keyframes scroll-down {
   0% {
     transform: translate(0);
@@ -172,6 +176,12 @@
 
   .header :where(.scroll-down) label {
     display: none;
+  }
+  .header :where(.scroll-down) span:nth-child(2) {
+    display: none;
+  }
+  .header :where(.scroll-down) span:nth-child(3) {
+    display: flex;
   }
 }
 @media screen and (max-width: 376px) {
