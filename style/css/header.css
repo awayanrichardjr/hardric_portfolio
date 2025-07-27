@@ -175,7 +175,7 @@
   }
 
   .header :where(.scroll-down) .material-symbols-rounded {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 376px) {
