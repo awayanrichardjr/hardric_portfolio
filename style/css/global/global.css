@@ -26,3 +26,12 @@ li {
 a {
   text-decoration: none;
 }
+
+/* text gradient */
+.text-gradient {
+  background: linear-gradient(to right, var(--red), rgb(255, 196, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}

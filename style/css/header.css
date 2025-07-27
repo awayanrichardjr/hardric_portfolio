@@ -64,7 +64,7 @@
 .header :where(.container) .myname {
   font-size: 70px;
   max-width: 500px;
-  color: var(--red);
+
   white-space: wrap;
   font-style: italic;
 }
