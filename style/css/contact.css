@@ -36,7 +36,8 @@
   width: 100%;
 }
 
-.contact :where(.details) li {
+.contact :where(.details) li,
+a {
   color: grey;
 
   display: flex;
