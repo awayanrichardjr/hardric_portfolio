@@ -7,7 +7,11 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background: linear-gradient(
+    45deg,
+    rgb(0, 149, 255, 0.04),
+    rgb(255, 0, 238, 0.04)
+  );
 }
 
 html {

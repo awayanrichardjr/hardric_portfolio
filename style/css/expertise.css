@@ -31,7 +31,7 @@
 .expertise :where(.skills-list) li {
   border-radius: 0.5rem;
   background-color: white;
-  box-shadow: var(--boxsh);
+  box-shadow: var(--bs-below);
 
   display: flex;
   flex-direction: column;
